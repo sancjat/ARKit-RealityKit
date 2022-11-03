@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xVZ-S8-rrk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="ARKitProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iTU-gK-17c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UC-o9-fuG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
+                            </arView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O6g-B4-E6u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8UC-o9-fuG" secondAttribute="bottom" id="4wA-7s-AOc"/>
+                            <constraint firstItem="8UC-o9-fuG" firstAttribute="trailing" secondItem="O6g-B4-E6u" secondAttribute="trailing" id="5rP-vv-ynd"/>
+                            <constraint firstItem="8UC-o9-fuG" firstAttribute="leading" secondItem="O6g-B4-E6u" secondAttribute="leading" id="lEq-AS-ubc"/>
+                            <constraint firstItem="8UC-o9-fuG" firstAttribute="top" secondItem="O6g-B4-E6u" secondAttribute="top" id="zod-Bx-2nF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aOP-ay-pzL"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="aRView" destination="8UC-o9-fuG" id="3GS-9m-Pb1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="135"/>
+        </scene>
+        <!--AR Project-->
+        <scene sceneID="AXm-gv-R8f">
+            <objects>
+                <tableViewController storyboardIdentifier="MainViewController" clearsSelectionOnViewWillAppear="NO" id="boo-ie-0HM" customClass="MainViewController" customModule="ARKitProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="c8b-LR-Cf6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="mycell" id="Ln7-LG-iKs">
+                                <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ln7-LG-iKs" id="Vpf-AT-1Gt">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wMY-7D-3rf">
+                                            <rect key="frame" x="20" y="-1" width="394" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="boo-ie-0HM" id="bN7-Cs-FJR"/>
+                            <outlet property="delegate" destination="boo-ie-0HM" id="WQi-t0-j8I"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="AR Project" id="2S6-1u-FOI">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="J8f-p2-bYK"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1n9-YG-T9W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="134"/>
+        </scene>
+        <!--Card Reader View Controller-->
+        <scene sceneID="L2I-x1-5Wd">
+            <objects>
+                <viewController storyboardIdentifier="CardReaderViewController" id="GH1-1k-sZ8" customClass="CardReaderViewController" customModule="ARKitProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sa0-Ga-goS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N30-zW-89B">
+                                <rect key="frame" x="10" y="68" width="394" height="794"/>
+                                <connections>
+                                    <outlet property="delegate" destination="GH1-1k-sZ8" id="gtM-lO-Nmj"/>
+                                </connections>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Xu-lC-RXZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N30-zW-89B" firstAttribute="leading" secondItem="4Xu-lC-RXZ" secondAttribute="leading" constant="10" id="EoF-kz-r20"/>
+                            <constraint firstItem="N30-zW-89B" firstAttribute="centerX" secondItem="Sa0-Ga-goS" secondAttribute="centerX" id="Map-J6-WV9"/>
+                            <constraint firstItem="N30-zW-89B" firstAttribute="top" secondItem="4Xu-lC-RXZ" secondAttribute="top" constant="20" id="OR7-Gt-hcK"/>
+                            <constraint firstItem="4Xu-lC-RXZ" firstAttribute="trailing" secondItem="N30-zW-89B" secondAttribute="trailing" constant="10" id="cys-bZ-T3R"/>
+                            <constraint firstItem="N30-zW-89B" firstAttribute="bottom" secondItem="4Xu-lC-RXZ" secondAttribute="bottom" id="zI8-vI-4ZM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="augmentedRealityView" destination="N30-zW-89B" id="wAp-aD-KXW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nb7-Ya-Dlp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="823.66071428571422"/>
+        </scene>
+        <!--AR Project-->
+        <scene sceneID="SaT-TO-Ru2">
+            <objects>
+                <navigationController title="AR Project" id="xVZ-S8-rrk" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AB8-iE-YRs">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance" backgroundEffect="regular"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="boo-ie-0HM" kind="relationship" relationship="rootViewController" id="Ga8-eo-dS6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SSA-dd-GwK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-500" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

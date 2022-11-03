@@ -1,0 +1,236 @@
+{
+  "__content" : [
+    {
+      "scenes" : [
+        {
+          "__content" : [
+            {
+              "arAnchorSpecification" : {
+                "name" : "face"
+              },
+              "behaviors" : [
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : true
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:com.apple.rc.audio.miscellaneous.happy-chime-fx-01\/Happy%20Chime%20FX.caf",
+                                          "loops" : false,
+                                          "multiplePerformType" : "allow request",
+                                          "target" : [
+
+                                          ],
+                                          "volume" : 1
+                                        },
+                                        "name" : {
+                                          "type" : "audio"
+                                        }
+                                      },
+                                      "identifier" : "03B8D888-BE56-495E-A4B0-5EC831A99A35",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "50433B54-8472-4D84-B888-04484AF49894",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.364705890417099,
+                        0.74117648601531982,
+                        0.69019609689712524,
+                        1
+                      ],
+                      "identifier" : "5CD3494E-50C5-4DD9-AB95-EE1EB1366D84",
+                      "isEnabled" : true,
+                      "isLooping" : true,
+                      "isModal" : true,
+                      "name" : "Behaviour",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "target" : [
+
+                                  ]
+                                },
+                                "name" : "tapTarget"
+                              },
+                              "identifier" : "EE38AF08-DE01-4E89-A825-544C34945882",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                }
+              ],
+              "gravity" : [
+                0,
+                0,
+                12.354995727539062
+              ],
+              "identifier" : "91FFF2D6-63B6-41A0-AE6E-6DB99F522F26",
+              "material" : "lead",
+              "overrides" : {
+                "children" : {
+                  "21A7F548-611D-4F2E-A6EA-E2CC9FFB0F78" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "doubleSided",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ],
+                        [
+                          "image",
+                          {
+                            "typeName" : "String",
+                            "value" : "image:3a5ba8bbfa251b45ce1c4cb0ac9df695\/power-of-unity-crown.png"
+                          }
+                        ],
+                        [
+                          "maxDimension",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.59399999999999997
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PosterAssetFactory",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "6035723C-4EEB-4E52-9E91-EAD3B7BAC8C8"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.23079997301101685,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.23079997301101685,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.23079997301101685,
+                        0,
+                        0.0010619461536407471,
+                        0.00013710222265217453,
+                        -0.11999272555112839,
+                        1
+                      ]
+                    }
+                  },
+                  "211791A8-9EE3-4FF8-B223-869915CBC687" : null,
+                  "FFC8F0BE-8283-4F86-8074-0CBA1EEF89D5" : null
+                },
+                "factory" : null,
+                "runtimeAttributes" : [
+                  [
+                    "isAccessibilityEnabled",
+                    {
+                      "typeName" : "Bool",
+                      "value" : false
+                    }
+                  ]
+                ]
+              },
+              "physicsMode" : "none",
+              "title" : "Scene",
+              "viewTransform" : {
+                "cameraTransform" : [
+                  0.99970495700836182,
+                  0,
+                  -0.024288758635520935,
+                  0,
+                  -0.006794084794819355,
+                  0.96008116006851196,
+                  -0.2796388566493988,
+                  0,
+                  0.023319177329540253,
+                  0.27972143888473511,
+                  0.95979791879653931,
+                  0,
+                  0.27065297961235046,
+                  0.41814404726028442,
+                  1.5344656705856323,
+                  1
+                ],
+                "sceneTransform" : [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.99999994039535522,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.99999994039535522,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "__version" : 5
+        }
+      ],
+      "tags" : {
+        "__content" : [
+          {
+            "tagsStore" : {
+
+            }
+          }
+        ],
+        "__version" : 1
+      }
+    }
+  ],
+  "__version" : 1
+}
